@@ -39,3 +39,7 @@ write.table(VSL2$SEQ_ID., file = "/file/path/VSL2_seq_ID.txt", row.names = TRUE,
             col.names = TRUE, quote = FALSE)
 write.table(ord_VSL2$SEQ_ID., file = "/file/path/ordered_VSL2_seq_ID.txt", row.names = TRUE,
             col.names = TRUE, quote = FALSE)
+
+#Excel-ready data files
+write.csv(ridaodat, file = "/Users/tillytran/Desktop/ridaodata.csv", quote = FALSE) #CSV file of all RIDAO data
+write.csv(ord_VSL2$SEQ_ID., file = "/Users/tillytran/Desktop/disordereddat.csv", quote = FALSE) #ENSEMBL/Uniprot ID of disordered proteins 
